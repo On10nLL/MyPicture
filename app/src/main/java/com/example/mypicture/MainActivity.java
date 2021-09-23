@@ -43,12 +43,23 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerView1=findViewById(R.id.home_item);//创建recyclerView对象，并初始化其xml文件
         recyclerView1.setLayoutManager(new GridLayoutManager(this,2));//设置为表格布局，列数为2（这个是最主要的，就是这个来展示陈列式布局）
         recyclerView1.addItemDecoration(new space_item(space));//给recycleView添加item的间距
-        Intent intent = new Intent(MainActivity.this,Issue.class);
+        Intent intent1 = new Intent(MainActivity.this,Issue.class);
+        Intent intent2 = new Intent(MainActivity.this,MyHomePage.class);
+
         ImageButton btn_share = findViewById(R.id.btn_share);
+        ImageButton btn_me = findViewById(R.id.btn_me);
+
             btn_share.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(intent);
+                    startActivity(intent1);
+                }
+            });
+
+            btn_me.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(intent2);
                 }
             });
         recyclerView1.setAdapter(homeAdapter);//将适配器添加到recyclerView

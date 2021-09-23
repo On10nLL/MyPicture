@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Issue"></activity>
+        <activity android:name=".MyHomePage"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/re_myinfo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="18dp"
+        android:clickable="true"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+
+        <ImageView
+            android:id="@+id/iv_heads"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img2"/>
+        <LinearLayout
+            android:id="@+id/name"
+            android:orientation="horizontal"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/iv_heads">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="用户名：莉莉是🐖"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/re_collect"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:clickable="true"
+        android:paddingLeft="12dp">
+        <ImageView
+            android:id="@+id/iv_colletc"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_baseline_star_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_colletc"
+            android:text="我的收藏"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="12dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/myfavorite"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:clickable="true"
+        android:paddingLeft="12dp">
+        <ImageView
+            android:id="@+id/iv_myfavorite"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_baseline_favorite_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_myfavorite"
+            android:text="我的点赞"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/re_exit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:paddingLeft="12dp">
+        <ImageView
+            android:id="@+id/iv_exit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_baseline_exit_to_app_24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_exit"
+            android:text="退出登录"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="12dp" />
+
+    </RelativeLayout>
+</LinearLayout>
