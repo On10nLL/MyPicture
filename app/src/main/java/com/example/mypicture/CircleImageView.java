@@ -12,6 +12,7 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
+//
 public class CircleImageView extends androidx.appcompat.widget.AppCompatImageView {
 
     private Paint mPaint; //画笔

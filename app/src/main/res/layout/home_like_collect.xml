@@ -49,29 +49,6 @@
             android:orientation="horizontal"
             android:layout_gravity="top"
             android:gravity="right">
-
-
-
-                <Button
-                    android:id="@+id/home_item_btnlike"
-                    android:backgroundTint="@color/colo_red"
-                    android:padding="1dp"
-                    android:textSize="10sp"
-                    android:text="点赞"
-                    android:layout_width="40dp"
-                    android:layout_height="30dp"/>
-
-
-            <Button
-                android:id="@+id/collect"
-                android:backgroundTint="@color/colo_yellow"
-                android:padding="1dp"
-                android:textSize="10sp"
-                android:text="收藏"
-                android:layout_width="40dp"
-                android:layout_height="30dp"/>
-
-
         </LinearLayout>
     </LinearLayout>
 

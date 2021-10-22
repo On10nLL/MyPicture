@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="titles">
-        <item>中秋</item>
-        <item>国庆</item>
-        <item>春节</item>
-        <item>洗澡</item>
-        <item>喝水</item>
+        <item>可爱的猪</item>
+        <item>秀色可餐</item>
+        <item>午后惬意</item>
+        <item>深夜Emo</item>
+        <item>Basketball🏀</item>
     </string-array>
     
     <string-array name="username">
-        <item>🐋牛马</item>
-        <item>🐎牛马</item>
-        <item>🐖牛马</item>
-        <item>🐕牛马</item>
-        <item>🐒牛马</item>
+        <item>🐋</item>
+        <item>🐎</item>
+        <item>🐖</item>
+        <item>🐕</item>
+        <item>🐒</item>
     </string-array>
     
     <string-array name="images">
-        <item>@drawable/img1</item>
+        <item>@drawable/pig</item>
         <item>@drawable/img2</item>
-        <item>@drawable/img1</item>
-        <item>@drawable/img2</item>
-        <item>@drawable/img1</item>
+        <item>@drawable/sunny</item>
+        <item>@drawable/emo</item>
+        <item>@drawable/rose</item>
     </string-array>
 
     <string-array name="headsIcon">

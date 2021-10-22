@@ -17,4 +17,5 @@
     <color name="colo_bac">#f8f8f8</color>
     <color name="colo_yellow">#FEC62E</color>
     <color name="colo_red">#E53935</color>
+    <color name="divider">#e8e7e7</color>
 </resources>

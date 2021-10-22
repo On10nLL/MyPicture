@@ -5,6 +5,15 @@ public class Share {
     private String mAuthor;
     private int mImageId;
     private int mHeadsId;
+    private String mImageUrl;
+
+    public String getmImageUrl() {
+        return mImageUrl;
+    }
+
+    public void setmImageUrl(String mImageUrl) {
+        this.mImageUrl = mImageUrl;
+    }
 
     public String getmTitle() {
         return mTitle;
