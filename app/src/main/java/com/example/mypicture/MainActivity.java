@@ -4,38 +4,44 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Rect;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private String [] titles = null;
-    private String [] authors = null;
     private int space=5;//设置RecyclerView控件的item的上下间距
     private static List<Share> shareList = new ArrayList<>();
     private SQLiteDatabase db;
     private ItemDataBase itemDataBase;
     private Cursor cursor;
 
-
+    private static final int REQUEST_CODE_SAVE_IMG = 10;
+    private static final String TAG = "MainActivity";
+    private Context mContext;
     //获得全局list
     public static List<Share> getShareList() {
         return shareList;
     }
-    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
 
         itemDataBase = new ItemDataBase(this,"item.db",null,1);
         db = itemDataBase.getReadableDatabase();
@@ -61,7 +67,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         recyclerView1.setAdapter(homeAdapter);//将适配器添加到recyclerView
 
         cursor.close();
+
+        mContext = this;
+
     }
+
 
     class space_item extends RecyclerView.ItemDecoration{
         //设置item的间距
@@ -137,4 +147,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void addVIewItem(View view){
         View Item = View.inflate(this,R.layout.home_item,null);
     }
+
+
+
+
 }
